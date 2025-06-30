@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarcana_xvi_docs=self.webpackChunkarcana_xvi_docs||[]).push([[9639],{3543:a=>{a.exports=JSON.parse('{"metadata":{"permalink":"/arcana-xvi-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

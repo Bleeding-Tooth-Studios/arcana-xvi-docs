@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkarcana_xvi_docs=self.webpackChunkarcana_xvi_docs||[]).push([[1903],{1912:a=>{a.exports=JSON.parse('{"blogBasePath":"/arcana-xvi-docs/blog","blogTitle":"Blog","authorsListPath":"/arcana-xvi-docs/blog/authors"}')}}]);
