@@ -74,9 +74,9 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'My Site',
+      title: 'Arcana XVI',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Docs Logo',
         src: 'img/blth.png',
       },
       items: [
@@ -84,9 +84,9 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Bleeding-Tooth-Studios/arcana-xvi',
           label: 'GitHub',
