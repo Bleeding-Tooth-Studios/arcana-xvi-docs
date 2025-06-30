@@ -1,4 +1,4 @@
-# Components
+# Ordinary & Internal Components
 
 Components are the building blocks of the Arcana XVI Framework.
 
@@ -61,6 +61,8 @@ export class ClientValueStorageComponent extends ValueStorageComponent {
 }
 ```
 
+More on how shared components work are in the [shared components documentation.](https://www.npmjs.com/package/@rbxts/shared-components-flamework)
+
 ### Client Components
 
 Client components represent components that are attached to entities clientside.
@@ -79,3 +81,30 @@ They are not directly implemented as attachable components, but contain a shared
 This comes with the exception of components with a \_ suffix, which are internal components and usually do not have a `tag` field.
 Usually, they are attached to the entity by other components via their constructor. This is done to fragment responsibilities and keep the codebase clean.
 Internal components do not typically follow the same structure as ordinary components.
+
+```ts
+@Component({
+	tag: 'PlayerActor',
+})
+export class ClientPlayerActor extends SharedPlayerActor {
+	viewmodel: CharacterViewmodel;
+
+	constructor() {
+		super();
+		this.viewmodel = this.components.addComponent<CharacterViewmodel>(this.instance);
+	}
+}
+```
+
+```ts
+@Component({})
+export class CharacterViewmodel extends BaseComponent<{}, CharacterRigR6> implements OnStart, OnRender {
+	onStart() {
+		// do stuff
+	}
+
+	onRender() {
+		// do other stuff
+	}
+}
+```
