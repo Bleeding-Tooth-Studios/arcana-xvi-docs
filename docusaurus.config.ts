@@ -86,7 +86,7 @@ const config: Config = {
           position: 'left',
           label: 'Documentation',
         },
-        {to: '/blog', label: 'Blog', position: 'left'},
+        //{to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/Bleeding-Tooth-Studios/arcana-xvi',
           label: 'GitHub',
@@ -102,7 +102,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/intro/',
             },
           ],
         },
@@ -129,7 +129,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Built with Docusaurus!`,
+      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
