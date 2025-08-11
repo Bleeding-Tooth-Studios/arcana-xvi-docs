@@ -58,3 +58,8 @@ Plop will prompt you for:
 
 -   The folder category of the system (if left empty, it will be the root of the systems folder)
 -   The name of the system
+
+And then generate 2 files:
+
+-   `src/client/controllers/{folder}/{name}Controller.ts`
+-   `src/server/services/{folder}/{name}Service.ts`

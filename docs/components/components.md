@@ -12,6 +12,8 @@ The `Client` and `Server` components are inherited from the `Shared` component, 
 
 You can automatically create a shared component by using the [plop generator.](https://bleeding-tooth-studios.github.io/arcana-xvi-docs/docs/intro/plopfiles)
 
+`npx plop component`
+
 For example:
 
 ```ts
@@ -87,18 +89,18 @@ Internal components do not typically follow the same structure as ordinary compo
 	tag: 'PlayerActor',
 })
 export class ClientPlayerActor extends SharedPlayerActor {
-	viewmodel: CharacterViewmodel;
+	viewmodel: _CharacterViewmodel;
 
 	constructor() {
 		super();
-		this.viewmodel = this.components.addComponent<CharacterViewmodel>(this.instance);
+		this.viewmodel = this.components.addComponent<_CharacterViewmodel>(this.instance);
 	}
 }
 ```
 
 ```ts
 @Component({})
-export class CharacterViewmodel extends BaseComponent<{}, CharacterRigR6> implements OnStart, OnRender {
+export class _CharacterViewmodel extends BaseComponent<{}, CharacterRigR6> implements OnStart, OnRender {
 	onStart() {
 		// do stuff
 	}
